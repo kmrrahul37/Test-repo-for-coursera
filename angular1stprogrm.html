@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- sharing data with the view through scope -->
+<html ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <!-- <script src="angular.js"></script> -->
+    <script src="app.js"></script>
+    <style body{font-size:1.3em;}></style>
+    <title>Angularjs_1stprogram && name Calulator</title>
+  </head>
+  <body ng-App="myFirstApp">
+    <!-- <h1>My First AngularJS App</h1>
+    <div ng-controller="MyFirstcontroller">
+      <!-- {{name}} -->
+      <!-- {{sayHello()}} -->
+      <!-- <input type="text" ng-model="name">
+      Inside my input is:{{name}}
+    </div> -->
+    <h1>ASCII Name Calculator</h1>
+    <div ng-controller="NameCalculatorcontroller" >
+        <div>
+          Your Name:
+          <input type="text" ng-model="Name" ng-keyup="displayNumeric();">
+        </div>
+        <div>
+          Total Numeric Value of person's name is:{{totalvalue}}
+        </div>
+    </div>
+
+  </body>
+</html>
